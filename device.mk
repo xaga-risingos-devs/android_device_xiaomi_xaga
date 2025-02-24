@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/mt6895-common/mt6895.mk)
 # Inherit firmware
 $(call inherit-product-if-exists, vendor/firmware/xaga/firmware.mk)
 
+# Inherit lindroid
+$(call inherit-product, vendor/lindroid/lindroid.mk)
+
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera-xaga/device.mk)
 
