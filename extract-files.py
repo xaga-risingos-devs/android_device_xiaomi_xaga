@@ -52,7 +52,9 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
     ('vendor/lib64/lib3a.ae.pipe.so', 'vendor/lib64/mt6895/libaaa_toneutil.so', 'vendor/lib64/mt6895/lib3a.flash.so', 'vendor/lib64/mt6895/lib3a.sensors.color.so', 'vendor/lib64/mt6895/lib3a.sensors.flicker.so'): blob_fixup()
-        .add_needed('liblog.so')
+        .add_needed('liblog.so'),
+    ('vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service'): blob_fixup()
+       .add_needed('libstagefright_foundation-v33.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(
