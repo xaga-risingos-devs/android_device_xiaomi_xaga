@@ -35,6 +35,10 @@ vendor/etc/misound_res_headphone.bin
 vendor/etc/misound_res_spk.bin
 
 # Audio Hardware
+vendor/lib/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib/hw/audio.primary.mt6895.so
+vendor/lib/libaudio_param_parser-vnd.so
+vendor/lib/libmisound.so
+vendor/lib/libmisoundcrossfade.so
 vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6895.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libmisound.so
