@@ -55,6 +55,9 @@ PRODUCT_PACKAGES += \
     WifiOverlayXagaIn \
     WifiOverlayXagaPro
 
+PRODUCT_PACKAGE_OVERLAYS += \
+    device/xiaomi/xaga/overlay/ApertureConfig
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.project.rc \
